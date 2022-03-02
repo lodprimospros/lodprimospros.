@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+<html>
 
-You can use the [editor on GitHub](https://github.com/lodprimospros/lodprimospros./edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<head>
+ <h1>lodprimospros</h1> 
 
-### Markdown
+</head>
+<!--
+  Don't use the "5-unsafe" CDN version in your own code. It will break on you. 
+  Instead go to videojs.com and copy the CDN urls for the latest version.
+-->
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<div id="instructions">
 
-```markdown
-Syntax highlighted code block
+  <video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
+      controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'
+      data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+    <source src="https://photos.app.goo.gl/sREA2S92k4ujPoJR6" type='video/mp4' />
+    <source src="https://photos.app.goo.gl/sREA2S92k4ujPoJR6" type='video/webm' />
+  </video>
 
-# Header 1
-## Header 2
-### Header 3
+  <p>Custom skin for <a href="http://www.videojs.com" target="_blank">video.js</a>. Requires v5.0.0 or higher.</p>
+  
+  <h2>HOW TO CUSTOMIZE:</h2>
+  <ol>
+    <li>Click the CodePen <strong>Fork</strong> link above to create a new copy</li>
+    <li>Change the CSS (SCSS) as desired</li>
+    <li>Click <strong>Save</strong> to save your changes</li>
+    <li>Click <strong>Settings</strong> to name and describe your skin</li>
+    <li>Click the <strong>Share</strong> link to tweet your skin, and include @videojs so we know about it</li>
+  </ol>
+  <h2>HOW TO USE:</h2>
+  <ol>
+    <li>Click "Refresh" if you made any changes</li>
+    <li>Copy the CSS contents of the following box</li>
+    <li>Include it in the page with your player in a &lt;style&gt; tag or with a <a href="https://www.w3schools.com/css/css_howto.asp">stylesheet include</a></li>
+  </ol>
+  <textarea id="css_result"></textarea>
+  <button id="refresh">Refresh</button>
+</div>
+  
+<style>
+  #instructions { max-width: 640px; text-align: left; margin: 30px auto; }
+  #instructions textarea { width: 100%; height: 100px; }
+  
+  /* Show the controls (hidden at the start by default) */
+  .video-js .vjs-control-bar { 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 
-- Bulleted
-- List
+  /* Make the demo a little prettier */
+  body {
+    margin-top: 20px;
+    background: #222;
+    text-align: center; 
+    color: #aaa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: radial-gradient(#333, hsl(200,30%,6%) );
+  }
 
-1. Numbered
-2. List
+  a, a:hover, a:visited { color: #76DAFF; }
+</style>
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lodprimospros/lodprimospros./settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
