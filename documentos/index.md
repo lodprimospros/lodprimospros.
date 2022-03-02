@@ -1,16 +1,4 @@
-<html>
 
-
-<head>
- <h1>lodprimospros</h1> 
-
-</head>
-<!--
-  Don't use the "5-unsafe" CDN version in your own code. It will break on you. 
-  Instead go to videojs.com and copy the CDN urls for the latest version.
--->
-
-<div id="instructions">
 
   <video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
       controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'
